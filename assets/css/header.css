@@ -1,0 +1,59 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo {
+    align-items: center;
+}
+
+.header .photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px ridge #ffd700;
+}
+
+.header .title {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.header a {
+    font-family: inherit;  /* Herda a fonte do elemento pai */
+    color: inherit;        /* Herda a cor do texto do elemento pai */
+    text-decoration: none; /* Remove o sublinhado padrão, caso necessário */
+}
+
+.header a:hover {    
+    color: #686868;    
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+        display: grid;
+        grid-template-areas: 
+            "photo title"
+            "photo information"
+        ;
+    }
+
+    .header .photo {
+        grid-area: photo;
+        margin: 0 auto;
+    }
+
+    .header .title {
+        grid-area: title;
+        text-align: start;
+    }
+
+    .header .information {
+        grid-area: information;
+    }
+}
+    
+
+    
+

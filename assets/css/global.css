@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: rgb(0, 0, 0);    
+    background: linear-gradient(135deg, #ffd700 10%, black 25%, black 75%, #ffd700 90%) fixed;
+    height: 100vh;
+    margin: 0;    
+}
+
+.main {
+    padding: 1rem;
+    margin: 1rem;
+    border: 10px groove #fff;
+    border-radius: 1rem;
+    color: white;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: .5rem;
+}
+
+.information p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: .5rem;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.information p::before {
+    content: '';
+    display: inline-block;
+    /* Garante que o pseudo-elemento seja exibido */
+    width: 1rem;
+    height: 1rem;
+    background-image: url('/assets/img/icons/user.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 0.5rem;
+    z-index: 10;
+}
+
+.information .job::before {
+    background-image: url('/assets/img/icons/web-programming.png');
+}
+
+.information .location::before {
+    background-image: url('/assets/img/icons/location.png');
+}
+
+.information .email::before {
+    background-image: url('/assets/img/icons/email.png');
+}
+
+.information .phone::before {
+    background-image: url('/assets/img/icons/whatsapp.png');
+}
+
+.information .user::before {
+    background-image: url('/assets/img/icons/user.png');
+}
+
+@media only screen and (max-width: 767px) {
+    .main {
+        margin: 1rem;        
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .main {
+        max-width: 1024px;        
+        margin: auto;        
+        margin-top: 5rem;
+    }
+}

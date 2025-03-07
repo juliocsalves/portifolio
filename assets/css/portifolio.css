@@ -1,0 +1,42 @@
+
+.portifolio {
+    display: flex;
+    flex-direction: column;  
+    align-items: flex-start;  
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 1rem; 
+}
+
+.portifolio li::marker {
+    content: none;
+}
+
+.portifolio li {
+    padding: 0.9rem; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;  
+    width: 100%; 
+}
+
+.portifolio li i {
+    margin-right: 10px; 
+}
+
+.portifolio a {
+    display: block;  
+    margin-left: 2rem; 
+    font-size: 0.9rem; 
+    margin-top: -1.5rem; 
+    margin-bottom: 1rem;;
+    text-decoration: none; 
+    color: inherit;
+    font-style: italic;
+}
+
+.portifolio a:hover {
+    color: #949494; 
+    text-decoration: none;
+}

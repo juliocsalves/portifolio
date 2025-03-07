@@ -1,0 +1,63 @@
+.acordeon {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    background-color: #e7c300;
+}
+
+.acordeon .trigger {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease, outline 0.3s ease, color 0.3s ease;
+    padding: .3rem;
+}
+
+.acordeon .trigger:hover,
+.acordeon .trigger.active {
+    background-color: #e7c300;
+}
+
+.acordeon .content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    background-color: #333;
+    border-radius: 0 0 1rem 1rem;
+    color: white;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    display: block;
+}
+
+.acordeon.open .content {
+    display: block;
+    padding: 0; 
+    height: auto;
+    opacity: 1;
+}
+
+.acordeon .content.open {
+    max-height: 500px;
+    padding: 0;
+}
+
+.toggle-icon {
+    font-size: 1.8rem;
+    transition: transform 0.3s ease;
+}
+
+.bi-chevron-up,
+.bi-chevron-down {
+    transition: transform 0.3s ease;
+}

@@ -1,0 +1,63 @@
+.content {
+    display: flex; 
+    gap: 2rem; 
+}
+
+.column {
+    flex: 1; 
+}
+
+.content h3 {
+    margin: 0;
+    padding-top: 1rem;
+}
+
+.experience {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.experience li {
+    padding-bottom: -.5;
+}
+
+.experience li:last-child {
+    margin-bottom: 1.5rem;
+}
+
+.img-skills{
+    width: 5rem;
+    height: 4.5rem;
+    border-radius: 50%;    
+}
+
+.col-skills {
+    display: flex;
+    gap: 2rem; 
+    padding-left: 2rem;
+}
+
+.column {
+    flex: 1; 
+}
+
+@media (max-width: 768px) {
+    .col-skills {
+        flex-direction: column;
+    }
+    
+    .column {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; 
+    }
+
+    .column {
+        width: 100%;
+    }
+}

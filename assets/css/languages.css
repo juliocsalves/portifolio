@@ -1,0 +1,39 @@
+
+ul, ol {
+    list-style: none !important;  
+    margin: 0;
+    padding: 0;
+}
+
+.portifolio {
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+}
+
+.portifolio li {
+    padding: 0;
+    text-align: left; 
+    display: block; 
+    margin-bottom: 10px;
+    margin-top: -1rem;
+}
+
+.portifolio li i {
+    margin-right: 10px;     
+}
+
+.portifolio a {
+    display: block; 
+    font-size: 0.9rem;
+    margin-top: 5px;
+    margin-left: 20px; 
+    text-decoration: none; /* Remove o sublinhado padrão */
+    color: inherit;
+}
+
+
+.portifolio a:hover {
+    color: #949494; 
+    text-decoration: none; 
+}
